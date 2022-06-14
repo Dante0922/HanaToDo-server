@@ -34,6 +34,10 @@ app.listen(PORT, () => {
   console.log(`running on port ${PORT}`);
 });
 
+app.get("/", (req, res) => {
+  res.send("Hello world!");
+});
+
 //-----------------------TODO 관련-------------------------------
 // user1의 todolist 불러오기
 app.get("/getUser1", (req, res) => {
